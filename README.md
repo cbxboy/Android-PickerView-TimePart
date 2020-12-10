@@ -1,19 +1,16 @@
 
 ## Android-PickerView
 
-
-
-### [English Document](https://github.com/Bigkoo/Android-PickerView/blob/master/README-en.md)
-
 ### 注意事项、详请使用方式、更新日志等，请查看 [Wiki文档](https://github.com/Bigkoo/Android-PickerView/wiki)
 **Wiki文档，Wiki文档，Wiki文档 !~ 重要的事情说三遍**
 
 ### 有兴趣研究3D滚轮效果的实现机制，希望把源码研究透彻的可以看看这篇博客：
 ### [Android-PickerView系列之源码解析篇（二）](http://blog.csdn.net/qq_22393017/article/details/59488906)
 
-参考https://github.com/Bigkoo/Android-PickerView时间选择器添加时间段，使用方式建议将pickerview作为moudle注入项目使用。
-具体使用可参考https://github.com/Bigkoo/Android-PickerView/wiki文档。区别在于时间选择器初始化时需传入7个Boolean值，
-setType(new boolean[]{true, true, true, false, false, false, true})，同时选择回调添加时间段item position回调。
+参考Android-PickerView时间选择器添加时间段，使用方式建议将pickerview作为moudle注入项目使用。
+具体使用可参考[Wiki文档](https://github.com/Bigkoo/Android-PickerView/wiki)。区别在于时间选择器初始化时需传入7个Boolean值，
+setType(new boolean[]{true, true, true, false, false, false, true})，同时选择回调添加时间段item position回调
+onTimeSelect(Date date, int part, View v) //选中事件回调。
 根据position与时间段数组判断处于哪个时间段。
 
 时间段定义在pickerview/res/attrs.xml中，可更换时间段。
