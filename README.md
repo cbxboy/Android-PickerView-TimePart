@@ -17,19 +17,6 @@ setType(new boolean[]{true, true, true, false, false, false, true})，同时选�
 根据position与时间段数组判断处于哪个时间段。
 
 时间段定义在pickerview/res/attrs.xml中，可更换时间段。
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="timePart">
-        <item>8点之前</item>
-        <item>8~10点 </item>
-        <item>10~12点</item>
-        <item>12~14点</item>
-        <item>14~16点</item>
-        <item>16~18点</item>
-        <item>18点之后</item>
-    </string-array>
-
-</resources>
 
 ### Thanks
 
